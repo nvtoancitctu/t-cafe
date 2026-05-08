@@ -53,5 +53,5 @@ window.addEventListener("pageshow", function (event) {
     }
 });
 
-loadComponent("/assets/components/scroll-buttons.html", "scroll-buttons-container");
-loadComponent("/assets/components/footer.html", "footer-container");
+loadComponent("../components/scroll-buttons.html", "scroll-buttons-container");
+loadComponent("../components/footer.html", "footer-container");
