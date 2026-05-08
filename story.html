@@ -1,0 +1,288 @@
+<!doctype html>
+<html class="light" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Our Story | T-Cafe</title>
+        <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <!-- Material Symbols -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            "on-primary-fixed": "#2b1613",
+                            "error-container": "#ffdad6",
+                            "secondary-fixed-dim": "#f0bd8b",
+                            "inverse-primary": "#e3beb8",
+                            "outline-variant": "#d3c3c0",
+                            "on-secondary": "#ffffff",
+                            "inverse-on-surface": "#f5f0ed",
+                            "on-tertiary": "#ffffff",
+                            "surface-container": "#f2edea",
+                            "on-tertiary-container": "#7f9b83",
+                            "on-error": "#ffffff",
+                            "surface-container-highest": "#e6e2df",
+                            "surface-dim": "#ded9d6",
+                            "surface-container-low": "#f8f3f0",
+                            "on-primary-container": "#ae8d87",
+                            "primary-fixed-dim": "#e3beb8",
+                            "on-tertiary-fixed-variant": "#334d38",
+                            "primary-fixed": "#ffdad4",
+                            "primary-container": "#3e2723",
+                            secondary: "#7d562d",
+                            "surface-bright": "#fdf8f5",
+                            "secondary-container": "#ffca98",
+                            "on-primary": "#ffffff",
+                            "on-error-container": "#93000a",
+                            "on-background": "#1c1b1a",
+                            error: "#ba1a1a",
+                            "surface-container-high": "#ece7e4",
+                            "on-secondary-fixed-variant": "#623f18",
+                            "surface-tint": "#745853",
+                            surface: "#fdf8f5",
+                            "on-secondary-container": "#7a532a",
+                            "on-surface": "#1c1b1a",
+                            "tertiary-container": "#193220",
+                            "tertiary-fixed": "#cceacf",
+                            outline: "#827472",
+                            "on-primary-fixed-variant": "#5b403c",
+                            "surface-variant": "#e6e2df",
+                            "on-tertiary-fixed": "#062010",
+                            "on-surface-variant": "#504442",
+                            "secondary-fixed": "#ffdcbd",
+                            "tertiary-fixed-dim": "#b0ceb4",
+                            "surface-container-lowest": "#ffffff",
+                            "on-secondary-fixed": "#2c1600",
+                            background: "#fdf8f5",
+                            primary: "#271310",
+                            tertiary: "#041d0c",
+                            "inverse-surface": "#32302e",
+                        },
+                        borderRadius: {
+                            DEFAULT: "0.25rem",
+                            lg: "0.5rem",
+                            xl: "0.75rem",
+                            full: "9999px",
+                        },
+                        spacing: {
+                            "section-gap": "120px",
+                            gutter: "24px",
+                            "container-padding": "40px",
+                            base: "8px",
+                        },
+                        fontFamily: {
+                            "headline-md": ["Playfair Display"],
+                            "body-md": ["Montserrat"],
+                            "body-lg": ["Montserrat"],
+                            "headline-xl": ["Playfair Display"],
+                            "display-lg": ["Playfair Display"],
+                            "label-caps": ["Montserrat"],
+                        },
+                        fontSize: {
+                            "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
+                            "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                            "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                            "headline-xl": ["48px", { lineHeight: "1.2", fontWeight: "600" }],
+                            "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                            "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.15em", fontWeight: "600" }],
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            .material-symbols-outlined {
+                font-variation-settings:
+                    "FILL" 0,
+                    "wght" 400,
+                    "GRAD" 0,
+                    "opsz" 24;
+            }
+            body {
+                background-color: #fdf8f5;
+                color: #1c1b1a;
+                -webkit-font-smoothing: antialiased;
+            }
+        </style>
+    </head>
+    <body class="font-body-md text-on-surface bg-surface">
+        <!-- TopNavBar -->
+        <nav class="bg-background/80 dark:bg-background/80 backdrop-blur-md border-b border-outline-variant/10 shadow-sm shadow-primary/5 docked full-width top-0 sticky z-50">
+            <div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-10 py-6">
+                <div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim uppercase tracking-widest">t-cafe</div>
+                <div class="hidden md:flex items-center gap-10 font-label-caps text-label-caps tracking-[0.15em] uppercase">
+                    <a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="./index.html">Home</a>
+                    <a class="text-primary dark:text-primary-fixed-dim border-b border-primary/40 pb-1" href="./story.html">Story</a>
+                    <a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="./menu.html">Menu</a>
+                    <a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="./gallery.html">Gallery</a>
+                    <a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="./contact.html">Contact</a>
+                </div>
+                <a href="./reservations.html" target="_blank" rel="noopener noreferrer">
+                    <button class="bg-primary text-on-primary font-label-caps text-label-caps px-8 py-3 rounded-full hover:opacity-80 transition-all active:opacity-70">Reservations</button>
+                </a>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main>
+            <!-- Section 1: Hero -->
+            <section class="relative h-[870px] flex items-center justify-center overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img
+                        class="w-full h-full object-cover brightness-90"
+                        data-alt="A cinematic, wide shot of a sun-drenched cafe interior during the early morning hours. Golden sunlight streams through large floor-to-ceiling windows, casting long, soft shadows and illuminating floating dust motes. The aesthetic is minimal and high-end, featuring light wood textures and cream-colored furniture that aligns with a sophisticated bistro atmosphere. The mood is tranquil, capturing the essence of a quiet morning ritual in a luxurious, serene setting."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHNOofX8PsWVmx8d-io_SGv6M3KP5A2ME2fYtuIvS_TcEwigwBAnET_xxrQ4j5otX2QRc0zGIHAhnF5VKIIr4uukbscXbLG67OytBdhVZjf-C5fSuyg1DfGIvG491NrjyniemlwUepe1x1YiHse1kfAKR55_WTRB2g8QzZujvb-6l4SbxF81YjT78JeThkY53U10o0D-Lqtvlz8U0C6G8RUFQBsaOIrsl0YlErIJLCoTS7GIYMy7YqCjuDnzI_-1niSrknXb7t1nE"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-surface"></div>
+                </div>
+                <div class="relative z-10 text-center px-container-padding max-w-4xl">
+                    <span class="font-label-caps text-label-caps text-primary mb-6 block tracking-[0.3em]">ESTABLISHED 1994</span>
+                    <h1 class="font-display-lg text-display-lg text-primary mb-8 italic">A Legacy of Quiet Mornings</h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">Crafting an intentional start to your day through the art of the perfect pour and the warmth of a shared table.</p>
+                </div>
+            </section>
+            <!-- Section 2: Heritage -->
+            <section class="max-w-[1280px] mx-auto px-10 py-section-gap">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="relative p-2 bg-surface-container-low inline-block rounded-lg shadow-sm">
+                            <img
+                                class="rounded-lg w-full aspect-[4/5] object-cover grayscale-[0.3] contrast-125"
+                                data-alt="A vintage-inspired, close-up photograph of a professional coffee roaster in action. Wisps of steam and aromatic smoke rise from a traditional cast-iron roasting machine filled with gleaming dark beans. The lighting is moody and artisanal, highlighting the rich textures of the roasted coffee. The composition evokes a sense of heritage and meticulous craftsmanship, with warm amber tones and deep coffee browns dominating the color palette, perfectly matching a high-end cafe branding."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuASGuhfAWN5buZawKeOQABNsduhwN3u6l75BUytwVYbKgEHRxdFUilaLYooKBZaO3KeUgXyA2Ve3iiPWtmh4zk0ZkQg_f3NAXpUFnQGCEHPjs63j2mX7euhjX3xCbFx9iHFxSd81v0_P0rSsBylAFviBnY61hV4HayrMLDXykZXcA92HVSOZWQkzGTnUpgWt4Z6QC8tfTW5AsB3H8nCvhbncMW-tVu7iVlVySAmz-IgUyn9JKLp2qd7sOvZk_VdMV5aQH_NYkKdCMo"
+                            />
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2 flex flex-col gap-8">
+                        <span class="font-label-caps text-label-caps text-secondary">OUR HERITAGE</span>
+                        <h2 class="font-headline-xl text-headline-xl text-primary leading-tight">Born from a passion for the slow ritual.</h2>
+                        <div class="space-y-6 font-body-md text-on-surface-variant leading-relaxed">
+                            <p>Founded in a quiet corner of the city, t-cafe began as a personal quest for the ultimate morning experience. Our founder, a master roaster with three decades of experience, believed that coffee is not just a caffeine delivery system, but a meditative art form.</p>
+                            <p>We honor the traditional methods of roasting, using small-batch techniques that have been passed down through generations. Every bean tells a story of its origin, and every cup is a testament to our unwavering dedication to quality.</p>
+                        </div>
+                        <div class="pt-4 border-t border-outline-variant flex gap-12">
+                            <div>
+                                <p class="font-headline-md text-headline-md text-primary">30+</p>
+                                <p class="font-label-caps text-label-caps text-on-surface-variant">YEARS OF MASTERY</p>
+                            </div>
+                            <div>
+                                <p class="font-headline-md text-headline-md text-primary">12</p>
+                                <p class="font-label-caps text-label-caps text-on-surface-variant">DIRECT FARMS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 3: Philosophy (Bento Style) -->
+            <section class="bg-surface-container-low py-[160px]">
+                <div class="max-w-[1280px] mx-auto px-10">
+                    <div class="text-center mb-32">
+                        <span class="font-label-caps text-label-caps text-secondary mb-4 block">THE PHILOSOPHY</span>
+                        <h2 class="font-headline-xl text-headline-xl text-primary">Small Steps, Great Intentions</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                        <!-- Ethical Sourcing -->
+                        <div class="md:col-span-7 bg-surface p-16 rounded-xl flex flex-col justify-between shadow-[0_20px_50px_-12px_rgba(39,19,16,0.08)] hover:shadow-2xl transition-all duration-700">
+                            <div class="mb-16">
+                                <h3 class="font-headline-md text-headline-md text-primary mb-6">Ethical Sourcing</h3>
+                                <p class="text-on-surface-variant max-w-md text-body-lg">We partner directly with family-owned estates in Ethiopia and Colombia, ensuring fair trade and regenerative farming practices that protect the earth.</p>
+                            </div>
+                            <img
+                                class="w-full h-80 object-cover rounded-lg"
+                                data-alt="A bright and airy close-up shot of raw green coffee beans held in the weathered, cupped hands of a farmer. The lighting is natural and soft, emphasizing the organic texture of the beans and the honest labor involved in harvesting. The scene is shot against a backdrop of lush coffee plants, using a light-mode aesthetic with soft cream and green tones to convey sustainability and direct ethical sourcing within a premium cafe brand context."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq3kQLMWPj4IsaXgpWP9tqMo4WG8BboNfoXPRfU1e7bQJEEtfNfWfK2V07I6gwLBcocXuwHoCmcvOn8BYyfN5-1OZSydWSS97gz1oDm9Cdh7qU2TXGbIAvufc4cCfXvYZBHGBIGXbwuBMbgRIrv6mjWGXZR0TfEXwOcXnwZw5m34IB7_E8mt0Mimlxtoitji-PdR9S6XyVmb1hJJ8wYuLUBEjlXm9ysfQa-LSZR4f5lZNWWiV3NEzwie0tcafh6eF-lU0XbfnD5vE"
+                            />
+                        </div>
+                        <!-- Art of Roasting -->
+                        <div class="md:col-span-5 bg-primary p-16 rounded-xl text-on-primary flex flex-col justify-between overflow-hidden relative shadow-[0_20px_50px_-12px_rgba(39,19,16,0.2)] hover:shadow-2xl transition-all duration-700">
+                            <div class="relative z-10">
+                                <h3 class="font-headline-md text-headline-md text-surface mb-6">The Art of Roasting</h3>
+                                <p class="text-surface/90 text-body-lg">Each roast profile is meticulously balanced by hand to unlock the unique floral and nutty notes inherent to the terroir.</p>
+                            </div>
+                            <div class="mt-12 relative z-10">
+                                <div class="w-32 h-32 border-2 border-surface/20 rounded-full flex items-center justify-center italic text-surface font-headline-md text-headline-md">92°</div>
+                                <p class="font-label-caps text-label-caps text-surface/60 mt-6">PRECISION HEAT CONTROL</p>
+                            </div>
+                            <div class="absolute bottom-[-30px] right-[-30px] opacity-10">
+                                <span class="material-symbols-outlined text-[180px] text-surface">thermostat</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 4: The Artisans -->
+            <section class="max-w-[1280px] mx-auto px-10 py-section-gap">
+                <div class="flex flex-col md:flex-row gap-16 items-end mb-16">
+                    <div class="md:w-1/2">
+                        <span class="font-label-caps text-label-caps text-secondary mb-4 block">THE HUMAN TOUCH</span>
+                        <h2 class="font-headline-xl text-headline-xl text-primary">The Artisans of Matin</h2>
+                    </div>
+                    <div class="md:w-1/2">
+                        <p class="text-on-surface-variant font-body-lg">Behind every cup is a master artisan—a barista who understands the chemistry of milk, a baker who listens to the crackle of the crust.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="group">
+                        <div class="overflow-hidden rounded-lg mb-6">
+                            <img
+                                class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700"
+                                data-alt="An intimate portrait of a skilled barista pouring precise latte art into a ceramic cup. The barista's hands are steady, showcasing expertise and focus. The lighting is high-key and sophisticated, highlighting the silky texture of the steamed milk and the rich brown crema. The background is a minimalist, upscale cafe environment with soft-focus cream and wood elements, embodying quiet luxury and professional craftsmanship."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCirM6WJXMnInr9OFY0z_EJqp_iwDckHZM4d3dp-sefUTXoXTL-q3TsqIjz_XhZSiMLeG_PqFtliRXW7C4yzRSlO8XQ8P3GFYCXA5pxpJUBY8Ebu9VzTgMbd7JkKYWGHxnMKNzFQE64HntmIlKVgDntuRPbV1pBFuyWQeDEcukMddTA7ephzoJtaf9JbDcu_o3eiQp7T1AJ1VH3K_Hs2IohOY-wgaOHwBYb4KhqsnPoMBdbzvMU36Fx0zM8lfQVBwwWCivq_7rEi1Q"
+                            />
+                        </div>
+                        <h4 class="font-headline-md text-headline-md text-primary">The Baristas</h4>
+                        <p class="text-on-surface-variant font-label-caps text-label-caps mt-2">MASTERS OF THE POUR</p>
+                    </div>
+                    <div class="group pt-12 md:pt-24">
+                        <div class="overflow-hidden rounded-lg mb-6">
+                            <img
+                                class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700"
+                                data-alt="A close-up of a baker's flour-dusted hands gently shaping a rustic loaf of sourdough bread. The shot is detailed, capturing the texture of the dough and the fine powder of flour in the air. The light is warm and natural, coming from a nearby window, creating a serene and artisanal atmosphere. The color scheme is composed of earthy creams and soft tans, reinforcing the artisanal and human-centric brand identity."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf8B8ZawOy6qgsm_y7P-tbIdz0yofo3E0Ck0fSbpiFfeJabtqicTYItAOrNH8iPkC5CaUhAwhFUqXjArO_XX8v0p0AbRp5u7XxOvAE06QseDX-QPwdYOCU_Z5UoFbmhcH78LUSg7v-Kwy8pfjpt16LFT2sLoLO-SY6XW0roLzHD2U1l4OapTLmhnhFthHVwH7uoxh3m4jZKmUBDZKmdaKvZ6kLB2EiudUO34lG9jtVWon9fbnFlbWolBz9zPmTcgDXh7lMNpItTKg"
+                            />
+                        </div>
+                        <h4 class="font-headline-md text-headline-md text-primary">The Bakers</h4>
+                        <p class="text-on-surface-variant font-label-caps text-label-caps mt-2">CRAFTSMEN OF CRUST</p>
+                    </div>
+                    <div class="group">
+                        <div class="overflow-hidden rounded-lg mb-6">
+                            <img
+                                class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700"
+                                data-alt="A high-angle, curated shot of a clean, minimalist cafe counter where a service member is placing a fresh pastry and a cup of coffee. The focus is on the graceful movements and the pristine presentation. The lighting is bright and modern, with a palette of whites, creams, and deep coffee browns. The scene radiates a sense of hospitality, attention to detail, and a commitment to providing an elevated guest experience."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNOquWm-XzCRp3C3na7FCSoQPUmBfdb6kiVHzJmJSCS9ar3I5c-757zaMzJ2oxuGQzNiwE8hmHgS9bzgiaqARWUEi0Bn7eBAKVzYKezYvvqnYSwIjR_tGhahxAvcjJaBg-Tdio9zjYJgmLhAdo6fsRad4Ta9LGzXpIkF3pDDi0CMx6_6Kalw6XQdcnSbeuWMq0imdyTfOZqp3cojxBIsVs_nu095kPRrCpe9cmQINbJqOyrm0sK0nOe7X222v-Hbj_kHf8jzR8P88"
+                            />
+                        </div>
+                        <h4 class="font-headline-md text-headline-md text-primary">The Curators</h4>
+                        <p class="text-on-surface-variant font-label-caps text-label-caps mt-2">ARCHITECTS OF AMBIENCE</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 5: CTA -->
+            <section class="py-section-gap text-center bg-surface">
+                <div class="max-w-2xl mx-auto px-10">
+                    <div class="w-px h-24 bg-primary/20 mx-auto mb-12"></div>
+                    <h2 class="font-display-lg text-headline-xl text-primary mb-8 italic">Experience the Ritual</h2>
+                    <p class="text-on-surface-variant font-body-lg mb-12">Visit us at any of our quiet city sanctuaries and find your perfect morning moment.</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-6">
+                        <button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-caps text-label-caps hover:bg-on-primary-fixed-variant transition-colors shadow-lg active:scale-95">FIND A LOCATION</button>
+                        <button class="border border-primary text-primary px-10 py-4 rounded-full font-label-caps text-label-caps hover:bg-primary/5 transition-colors active:scale-95">VIEW THE MENU</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <div id="footer-container"></div>
+        <!-- Scroll buttons -->
+        <div id="scroll-buttons-container"></div>
+        <script src="/assets/js/load-components.js"></script>
+    </body>
+</html>

@@ -1,0 +1,327 @@
+<!doctype html>
+<html class="light" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Menu | T-Cafe</title>
+        <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            "on-primary-fixed-variant": "#5b403c",
+                            "on-tertiary-fixed": "#062010",
+                            "surface-container-high": "#ece7e4",
+                            background: "#fdf8f5",
+                            outline: "#827472",
+                            "on-primary": "#ffffff",
+                            "on-secondary-fixed": "#2c1600",
+                            "on-secondary-container": "#7a532a",
+                            tertiary: "#041d0c",
+                            "on-primary-fixed": "#2b1613",
+                            "surface-container": "#f2edea",
+                            "on-tertiary-fixed-variant": "#334d38",
+                            "on-background": "#1c1b1a",
+                            "surface-container-highest": "#e6e2df",
+                            secondary: "#7d562d",
+                            "on-secondary-fixed-variant": "#623f18",
+                            "primary-fixed-dim": "#e3beb8",
+                            "tertiary-fixed-dim": "#b0ceb4",
+                            "primary-container": "#3e2723",
+                            "inverse-primary": "#e3beb8",
+                            "error-container": "#ffdad6",
+                            "outline-variant": "#d3c3c0",
+                            "on-primary-container": "#ae8d87",
+                            "on-surface": "#1c1b1a",
+                            "surface-container-lowest": "#ffffff",
+                            "on-tertiary-container": "#7f9b83",
+                            primary: "#271310",
+                            "surface-tint": "#745853",
+                            "primary-fixed": "#ffdad4",
+                            "surface-bright": "#fdf8f5",
+                            "surface-dim": "#ded9d6",
+                            "on-tertiary": "#ffffff",
+                            error: "#ba1a1a",
+                            "secondary-container": "#ffca98",
+                            "on-error": "#ffffff",
+                            "tertiary-container": "#193220",
+                            "on-error-container": "#93000a",
+                            "surface-variant": "#e6e2df",
+                            "inverse-surface": "#32302e",
+                            "secondary-fixed": "#ffdcbd",
+                            "on-secondary": "#ffffff",
+                            "on-surface-variant": "#504442",
+                            "inverse-on-surface": "#f5f0ed",
+                            "surface-container-low": "#f8f3f0",
+                            surface: "#fdf8f5",
+                            "secondary-fixed-dim": "#f0bd8b",
+                            "tertiary-fixed": "#cceacf",
+                        },
+                        borderRadius: {
+                            DEFAULT: "0.25rem",
+                            lg: "0.5rem",
+                            xl: "0.75rem",
+                            full: "9999px",
+                        },
+                        spacing: {
+                            "container-padding": "40px",
+                            gutter: "24px",
+                            "section-gap": "120px",
+                            base: "8px",
+                        },
+                        fontFamily: {
+                            "display-lg": ["Playfair Display"],
+                            "headline-xl": ["Playfair Display"],
+                            "body-lg": ["Montserrat"],
+                            "label-caps": ["Montserrat"],
+                            "headline-md": ["Playfair Display"],
+                            "body-md": ["Montserrat"],
+                        },
+                        fontSize: {
+                            "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                            "headline-xl": ["48px", { lineHeight: "1.2", fontWeight: "600" }],
+                            "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                            "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.15em", fontWeight: "600" }],
+                            "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
+                            "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            body {
+                background-color: #fdf8f5;
+            }
+            .menu-dotted-line {
+                flex-grow: 1;
+                border-bottom: 1px dotted #827472;
+                margin: 0 12px;
+                margin-bottom: 6px;
+                opacity: 0.3;
+            }
+            .hero-mask {
+                clip-path: inset(0 0 0 0);
+            }
+            .material-symbols-outlined {
+                font-variation-settings:
+                    "FILL" 0,
+                    "wght" 300,
+                    "GRAD" 0,
+                    "opsz" 24;
+            }
+        </style>
+    </head>
+    <body class="text-on-background">
+        <!-- TopNavBar -->
+        <nav class="bg-background/80 dark:bg-background/80 backdrop-blur-md border-b border-outline-variant/10 shadow-sm shadow-primary/5 docked full-width top-0 sticky z-50">
+            <div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-10 py-6">
+                <div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim uppercase tracking-widest">t-cafe</div>
+                <div class="hidden md:flex items-center gap-10 font-label-caps text-label-caps tracking-[0.15em] uppercase">
+                    <a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="./index.html">Home</a>
+                    <a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="./story.html">Story</a>
+                    <a class="text-primary dark:text-primary-fixed-dim border-b border-primary/40 pb-1" href="./menu.html">Menu</a>
+                    <a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="./gallery.html">Gallery</a>
+                    <a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="./contact.html">Contact</a>
+                </div>
+                <a href="./reservations.html" target="_blank" rel="noopener noreferrer">
+                    <button class="bg-primary text-on-primary font-label-caps text-label-caps px-8 py-3 rounded-full hover:opacity-80 transition-all active:opacity-70">Reservations</button>
+                </a>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section -->
+            <section class="relative h-[614px] flex items-center justify-center overflow-hidden bg-surface-container-high">
+                <img
+                    alt="t-cafe Menu Hero"
+                    class="absolute inset-0 w-full h-full object-cover opacity-90"
+                    data-alt="A top-down editorial shot of a minimalist coffee table in a sun-drenched cafe. A perfectly poured latte with intricate heart-shaped latte art sits next to a flaky, golden-brown croissant on a ceramic cream-colored plate. The lighting is soft and morning-warm, highlighting the rich textures of the coffee bean wood table and the steam rising from the cup. The overall aesthetic is quiet luxury, emphasizing artisanal craft and sophisticated calm."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAglG6uHUKPXsYYBwJDwo-VC0sD0ysyzsRB7dJ5WrIsSMQliTTCjpzemXAWlmWinoPnXoVvukM0M9IDJEoj5w28euZPOwz9HxUqXdp0vuow8OwlR6GIjVorQcSnyFWJQNvcA_XViwgX1O8VmE-08TRT7FeweMiWytmb9dJpkijSTnkEWz14HeLpcFNwMXBrWWca1KRzsOAKdBNpN6NfcZeDIN6_kgSrfEe2-geiGFohjcY6MU9XjOTG0cF-xJPnrGwIIUtPfL0gUKA"
+                />
+                <div class="relative z-10 text-center px-container-padding">
+                    <span class="font-label-caps text-label-caps tracking-[0.3em] text-primary uppercase mb-4 block">Seasonal Offerings</span>
+                    <h1 class="font-display-lg text-display-lg text-primary mb-6">The Morning Menu</h1>
+                    <div class="w-24 h-[1px] bg-primary mx-auto opacity-40"></div>
+                </div>
+            </section>
+            <!-- Menu Section -->
+            <section class="max-w-[1280px] mx-auto py-section-gap px-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-24">
+                    <!-- Category: Specialty Coffee -->
+                    <div class="flex flex-col gap-8">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="material-symbols-outlined text-primary text-3xl">coffee</span>
+                            <h2 class="font-headline-xl text-headline-xl text-primary">Specialty Coffee</h2>
+                        </div>
+                        <div class="space-y-10">
+                            <!-- Item -->
+                            <div class="group">
+                                <div class="flex items-end justify-between mb-2">
+                                    <span class="font-headline-md text-[24px] text-primary">Single Origin Espresso</span>
+                                    <div class="menu-dotted-line"></div>
+                                    <span class="font-body-md font-semibold text-secondary">4.50</span>
+                                </div>
+                                <p class="font-body-md text-on-surface-variant italic">Rotating seasonal micro-lots, expertly roasted for clarity and sweetness.</p>
+                            </div>
+                            <!-- Item -->
+                            <div class="group">
+                                <div class="flex items-end justify-between mb-2">
+                                    <span class="font-headline-md text-[24px] text-primary">The Matin Latte</span>
+                                    <div class="menu-dotted-line"></div>
+                                    <span class="font-body-md font-semibold text-secondary">5.25</span>
+                                </div>
+                                <p class="font-body-md text-on-surface-variant italic">Signature blend with clover honey and a hint of Himalayan sea salt.</p>
+                            </div>
+                            <!-- Item -->
+                            <div class="group">
+                                <div class="flex items-end justify-between mb-2">
+                                    <span class="font-headline-md text-[24px] text-primary">Hario V60 Pour Over</span>
+                                    <div class="menu-dotted-line"></div>
+                                    <span class="font-body-md font-semibold text-secondary">6.00</span>
+                                </div>
+                                <p class="font-body-md text-on-surface-variant italic">Precisely brewed single-origin beans, highlighting bright floral and citrus notes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Category: Artisan Teas -->
+                    <div class="flex flex-col gap-8">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="material-symbols-outlined text-primary text-3xl">local_drink</span>
+                            <h2 class="font-headline-xl text-headline-xl text-primary">Artisan Teas</h2>
+                        </div>
+                        <div class="space-y-10">
+                            <!-- Item -->
+                            <div class="group">
+                                <div class="flex items-end justify-between mb-2">
+                                    <span class="font-headline-md text-[24px] text-primary">Jade Cloud Green</span>
+                                    <div class="menu-dotted-line"></div>
+                                    <span class="font-body-md font-semibold text-secondary">4.75</span>
+                                </div>
+                                <p class="font-body-md text-on-surface-variant italic">Hand-rolled organic tea from the high mountains of Hubei.</p>
+                            </div>
+                            <!-- Item -->
+                            <div class="group">
+                                <div class="flex items-end justify-between mb-2">
+                                    <span class="font-headline-md text-[24px] text-primary">Kyoto Ceremonial Matcha</span>
+                                    <div class="menu-dotted-line"></div>
+                                    <span class="font-body-md font-semibold text-secondary">6.50</span>
+                                </div>
+                                <p class="font-body-md text-on-surface-variant italic">Stone-ground ceremonial grade whisked to a velvety, vibrant finish.</p>
+                            </div>
+                            <!-- Item -->
+                            <div class="group">
+                                <div class="flex items-end justify-between mb-2">
+                                    <span class="font-headline-md text-[24px] text-primary">Earl Grey Reserve</span>
+                                    <div class="menu-dotted-line"></div>
+                                    <span class="font-body-md font-semibold text-secondary">4.25</span>
+                                </div>
+                                <p class="font-body-md text-on-surface-variant italic">Premium black tea scented with high-altitude Calabrian bergamot oil.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Category: All-Day Breakfast (Full Width Accent) -->
+                    <div class="col-span-1 md:col-span-2 bg-surface-container-low p-12 lg:p-20 rounded-lg flex flex-col md:flex-row gap-16 items-center">
+                        <div class="w-full md:w-1/2">
+                            <div class="flex items-center gap-4 mb-8">
+                                <span class="material-symbols-outlined text-primary text-3xl">skillet</span>
+                                <h2 class="font-headline-xl text-headline-xl text-primary">All-Day Breakfast</h2>
+                            </div>
+                            <div class="space-y-12">
+                                <div class="group">
+                                    <div class="flex items-end justify-between mb-2">
+                                        <span class="font-headline-md text-[24px] text-primary">Sourdough Tartine</span>
+                                        <div class="menu-dotted-line"></div>
+                                        <span class="font-body-md font-semibold text-secondary">14.00</span>
+                                    </div>
+                                    <p class="font-body-md text-on-surface-variant italic">Smashed Hass avocado, radish, toasted seeds, and a poached heritage egg.</p>
+                                </div>
+                                <div class="group">
+                                    <div class="flex items-end justify-between mb-2">
+                                        <span class="font-headline-md text-[24px] text-primary">Truffle Scramble</span>
+                                        <div class="menu-dotted-line"></div>
+                                        <span class="font-body-md font-semibold text-secondary">18.00</span>
+                                    </div>
+                                    <p class="font-body-md text-on-surface-variant italic">Creamy eggs with black truffle shavings on brioche with micro-greens.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[350px] overflow-hidden rounded-lg border border-outline-variant/20 shadow-xl shadow-primary/5">
+                            <img
+                                alt="Breakfast Plate"
+                                class="w-full h-full object-cover"
+                                data-alt="An artistic, high-contrast close-up of a gourmet breakfast tartine on a rustic ceramic plate. The sourdough is toasted golden, topped with vibrant green avocado, delicate pink radish slices, and a perfectly translucent poached egg that is beginning to break. The background shows the blurred texture of a cream linen napkin and the warm wooden grain of a cafe table. The lighting is editorial and sharp, creating a sophisticated and appetizing scene."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAYDHT9C7KDKjHa9WwNxAVU8zgLkWmgKAVS9H1qXF2awCIO95XZMgx9fheZklNAMcpslqCss5J-kCP3qUMW1G6o8rOSDOfnia_Dmrhblr-_hiGyrFffHa7KT2mo7gTV8KqifnwJbwveGmfKb8TQW4q2X2WV3lYUeMohGAmzItppCVSSk7g4BWo5NiQ5qYhHyKQXXkj8rkEsVu69f0rSexyoe6qfnT_qGnPZH-Xehy3f6uGoVZlbEfE8ECMDFBFNMpVLNX38GJ8fmU"
+                            />
+                        </div>
+                    </div>
+                    <!-- Category: Handcrafted Pastries -->
+                    <div class="flex flex-col gap-8">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="material-symbols-outlined text-primary text-3xl">bakery_dining</span>
+                            <h2 class="font-headline-xl text-headline-xl text-primary">Handcrafted Pastries</h2>
+                        </div>
+                        <div class="space-y-10">
+                            <div class="group">
+                                <div class="flex items-end justify-between mb-2">
+                                    <span class="font-headline-md text-[24px] text-primary">Classic Croissant</span>
+                                    <div class="menu-dotted-line"></div>
+                                    <span class="font-body-md font-semibold text-secondary">4.25</span>
+                                </div>
+                                <p class="font-body-md text-on-surface-variant italic">Traditional French method with AOP Isigny butter, baked fresh every morning.</p>
+                            </div>
+                            <div class="group">
+                                <div class="flex items-end justify-between mb-2">
+                                    <span class="font-headline-md text-[24px] text-primary">Pain au Chocolat</span>
+                                    <div class="menu-dotted-line"></div>
+                                    <span class="font-body-md font-semibold text-secondary">4.75</span>
+                                </div>
+                                <p class="font-body-md text-on-surface-variant italic">Double-fold pastry filled with Valrhona 70% dark chocolate batons.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Image Cluster for Atmosphere -->
+                    <div class="grid grid-cols-2 gap-4 h-full">
+                        <div class="rounded-lg overflow-hidden border border-outline-variant/20 shadow-lg shadow-primary/5">
+                            <img
+                                alt="Cafe Interior"
+                                class="w-full h-full object-cover"
+                                data-alt="A minimalist interior shot of t-cafe, featuring clean lines and a soft cream color palette. A wall of tall, arched windows allows natural light to flood the space, illuminating a few sculptural plants and mid-century modern furniture. The floor is a light, polished concrete. The mood is exceptionally quiet and sophisticated, embodying the 'Elevated Morning Ritual' theme with zero clutter and high-end materials."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAsrsFDfpexylYjAZNBRDz7ggzu31UPGxloUaI_WzjH8xNYAKD0mnxNm5Y9fPcvdh1BOqhxS7FBxsFzcVgV_2O-S9dthlHhKsd-LE5Pk9jGunN4expovS5E0OtxrAlZ21L-Czr1EO_JOyf7p6DtzNzdzTUn2PPPQ1K7hvzDFGJKDGUQ8H-z1QDQrbd7-Vbod--fsI6xr8nYU9YofKj74lGh_CNIqNBnHX8KF5Blz-rWjcdi31UJqb__M3jsqn2VBQ9bDD2RfLIOF0"
+                            />
+                        </div>
+                        <div class="rounded-lg overflow-hidden border border-outline-variant/20 shadow-lg shadow-primary/5 mt-12">
+                            <img
+                                alt="Barista Craft"
+                                class="w-full h-full object-cover"
+                                data-alt="A detailed, macro shot of a barista's hand carefully pouring textured milk into a dark ceramic cup of espresso. The focus is on the precision of the pour and the rich, hazelnut-colored crema. Warm, ambient lighting highlights the steam and the smooth surface of the milk. The shot captures the artisanal quality and craftsmanship of the coffee preparation in a luxury cafe setting."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ9h4hE2EtVYkprLU1bAEPlqg5P7XuwEEDZ9Iyg5eH8ii3r12dWoNRoinMTpGOzt3DI1gs2gPHezi0Bx1zAXoumvS6W7M-Cc1IcfApf5y-Sv12Bi3OJv8H0SZ2xtXfUB4gXb4XQNGmrrMjBu0a4SC5BZVw5LrG5HeApH8EUFgxuR024kygrh8nzFDDifYpsk_hjaVoqYixIOTnYt9PdWXZHniTZWkOD1yoWCGvn0rqqAa7qJI0zJ-U5I0kK4YmYOijQKLmUbg5yWY"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to Action -->
+            <section class="bg-primary text-on-primary py-24 text-center">
+                <div class="max-w-2xl mx-auto px-container-padding">
+                    <h2 class="font-display-lg text-[40px] mb-8">Join Us for Tomorrow's Sunrise</h2>
+                    <p class="font-body-lg mb-10 text-on-primary-container">We take limited daily reservations to ensure a quiet, unhurried atmosphere for every guest.</p>
+                    <button class="bg-surface-container-lowest text-primary px-10 py-4 rounded-none font-label-caps uppercase tracking-widest hover:bg-secondary hover:text-on-secondary transition-all duration-300">Book Your Table</button>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <div id="footer-container"></div>
+        <!-- Scroll buttons -->
+        <div id="scroll-buttons-container"></div>
+        <script src="/assets/js/load-components.js"></script>
+    </body>
+</html>
