@@ -48,3 +48,11 @@ function initScrollButtons() {
 
 loadComponent("./components/scroll-buttons.html", "scroll-buttons-container");
 loadComponent("./components/footer.html", "footer-container");
+
+// Reload trang khi submit form thành công
+window.addEventListener("pageshow", function (event) {
+    // Nếu trang được load từ cache (back/forward)
+    if (event.persisted || performance.getEntriesByType("navigation")[0].type === "back_forward") {
+        window.location.reload();
+    }
+});
