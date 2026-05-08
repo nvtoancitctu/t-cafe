@@ -4,18 +4,21 @@ async function loadComponent(path, targetId) {
 
     document.getElementById(targetId).innerHTML = html;
 
-    initScrollButtons();
+    if (targetId === "scroll-buttons-container") {
+        initScrollButtons();
+    }
 }
 
 function initScrollButtons() {
     const scrollButtons = document.getElementById("scroll-buttons");
+
+    if (!scrollButtons) return;
+
     const topBtn = document.getElementById("scrollTopBtn");
     const bottomBtn = document.getElementById("scrollBottomBtn");
 
-    // Ẩn ban đầu
     scrollButtons.classList.add("opacity-0", "pointer-events-none", "translate-y-5");
 
-    // Hiện khi scroll
     window.addEventListener("scroll", () => {
         if (window.scrollY > 300) {
             scrollButtons.classList.remove("opacity-0", "pointer-events-none", "translate-y-5");
@@ -28,7 +31,6 @@ function initScrollButtons() {
         }
     });
 
-    // Lên đầu
     topBtn?.addEventListener("click", () => {
         window.scrollTo({
             top: 0,
@@ -36,7 +38,6 @@ function initScrollButtons() {
         });
     });
 
-    // Xuống cuối
     bottomBtn?.addEventListener("click", () => {
         window.scrollTo({
             top: document.documentElement.scrollHeight,
@@ -45,13 +46,5 @@ function initScrollButtons() {
     });
 }
 
-// Reload trang khi submit form thành công
-window.addEventListener("pageshow", function (event) {
-    // Nếu trang được load từ cache (back/forward)
-    if (event.persisted || performance.getEntriesByType("navigation")[0].type === "back_forward") {
-        window.location.reload();
-    }
-});
-
-loadComponent("../components/scroll-buttons.html", "scroll-buttons-container");
-loadComponent("../components/footer.html", "footer-container");
+loadComponent("./components/scroll-buttons.html", "scroll-buttons-container");
+loadComponent("./components/footer.html", "footer-container");
