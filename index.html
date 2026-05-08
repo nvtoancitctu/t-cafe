@@ -1,0 +1,308 @@
+<!doctype html>
+<html class="light" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Home | T-Cafe</title>
+        <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            "on-primary-fixed-variant": "#5b403c",
+                            "on-tertiary-fixed": "#062010",
+                            "surface-container-high": "#ece7e4",
+                            background: "#fdf8f5",
+                            outline: "#827472",
+                            "on-primary": "#ffffff",
+                            "on-secondary-fixed": "#2c1600",
+                            "on-secondary-container": "#7a532a",
+                            tertiary: "#041d0c",
+                            "on-primary-fixed": "#2b1613",
+                            "surface-container": "#f2edea",
+                            "on-tertiary-fixed-variant": "#334d38",
+                            "on-background": "#1c1b1a",
+                            "surface-container-highest": "#e6e2df",
+                            secondary: "#7d562d",
+                            "on-secondary-fixed-variant": "#623f18",
+                            "primary-fixed-dim": "#e3beb8",
+                            "tertiary-fixed-dim": "#b0ceb4",
+                            "primary-container": "#3e2723",
+                            "inverse-primary": "#e3beb8",
+                            "error-container": "#ffdad6",
+                            "outline-variant": "#d3c3c0",
+                            "on-primary-container": "#ae8d87",
+                            "on-surface": "#1c1b1a",
+                            "surface-container-lowest": "#ffffff",
+                            "on-tertiary-container": "#7f9b83",
+                            primary: "#271310",
+                            "surface-tint": "#745853",
+                            "primary-fixed": "#ffdad4",
+                            "surface-bright": "#fdf8f5",
+                            "surface-dim": "#ded9d6",
+                            "on-tertiary": "#ffffff",
+                            error: "#ba1a1a",
+                            "secondary-container": "#ffca98",
+                            "on-error": "#ffffff",
+                            "tertiary-container": "#193220",
+                            "on-error-container": "#93000a",
+                            "surface-variant": "#e6e2df",
+                            "inverse-surface": "#32302e",
+                            "secondary-fixed": "#ffdcbd",
+                            "on-secondary": "#ffffff",
+                            "on-surface-variant": "#504442",
+                            "inverse-on-surface": "#f5f0ed",
+                            "surface-container-low": "#f8f3f0",
+                            surface: "#fdf8f5",
+                            "secondary-fixed-dim": "#f0bd8b",
+                            "tertiary-fixed": "#cceacf",
+                        },
+                        borderRadius: {
+                            DEFAULT: "0.25rem",
+                            lg: "0.5rem",
+                            xl: "0.75rem",
+                            full: "9999px",
+                        },
+                        spacing: {
+                            "container-padding": "40px",
+                            gutter: "24px",
+                            "section-gap": "120px",
+                            base: "8px",
+                        },
+                        fontFamily: {
+                            "display-lg": ["Playfair Display"],
+                            "headline-xl": ["Playfair Display"],
+                            "body-lg": ["Montserrat"],
+                            "label-caps": ["Montserrat"],
+                            "headline-md": ["Playfair Display"],
+                            "body-md": ["Montserrat"],
+                        },
+                        fontSize: {
+                            "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                            "headline-xl": ["48px", { lineHeight: "1.2", fontWeight: "600" }],
+                            "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                            "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.15em", fontWeight: "600" }],
+                            "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
+                            "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            .material-symbols-outlined {
+                font-variation-settings:
+                    "FILL" 0,
+                    "wght" 400,
+                    "GRAD" 0,
+                    "opsz" 24;
+            }
+            body {
+                background-color: #fdf8f5;
+                color: #1c1b1a;
+            }
+            .hero-gradient {
+                background: linear-gradient(to bottom, rgba(39, 19, 16, 0.4), rgba(39, 19, 16, 0.7));
+            }
+        </style>
+    </head>
+    <body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-primary">
+        <!-- TopNavBar -->
+        <nav class="bg-background/80 dark:bg-background/80 backdrop-blur-md border-b border-outline-variant/10 shadow-sm shadow-primary/5 docked full-width top-0 sticky z-50">
+            <div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-10 py-6">
+                <div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim uppercase tracking-widest">t-cafe</div>
+                <div class="hidden md:flex items-center gap-10 font-label-caps text-label-caps tracking-[0.15em] uppercase">
+                    <a class="text-primary dark:text-primary-fixed-dim border-b border-primary/40 pb-1" href="/index.html">Home</a>
+                    <a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="/story.html">Story</a>
+                    <a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="/menu.html">Menu</a>
+                    <a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="/gallery.html">Gallery</a>
+                    <a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="/contact.html">Contact</a>
+                </div>
+                <a href="/reservations.html" target="_blank" rel="noopener noreferrer">
+                    <button class="bg-primary text-on-primary font-label-caps text-label-caps px-8 py-3 rounded-full hover:opacity-80 transition-all active:opacity-70">Reservations</button>
+                </a>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main>
+            <header class="relative h-[921px] min-h-[600px] flex items-center overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img
+                        class="w-full h-full object-cover"
+                        data-alt="A luxurious and sun-drenched cafe interior featuring warm dark wood furniture, vintage brass accents, and soft cream walls. The morning light streams through large windows, illuminating a polished marble counter with artisanal coffee equipment. The atmosphere is sophisticated and quiet, embodying a premium morning ritual with a palette of deep browns and soft ambers."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8XAzDJVdXRnVs9BAhM65nKw22t2SH3I5AQqFK_sUEfUIk7BX5yNWVoAuqUXnT5NDdb4kzZvsy4EAnlM0nZ_Qu639AGCHbOrJ7SGhS-Ak6KYVUK8aQbkxC7EGG4WLV7WA7hfbEAnk0zOpx2nwLHAP-XL0TxOcuBrliJkzU2paP0xwQ3bwDWMHZAxpe93hD4et0aBnKsAQBhKGb7o5hqLWjYmlezW_fnAaZk3VuMEZxBVi74KQQilZWKJUcq7Z3n3EOsLeqOHrW_Nc"
+                    />
+                    <div class="absolute inset-0 hero-gradient"></div>
+                </div>
+                <div class="relative z-10 max-w-[1280px] mx-auto px-10 w-full text-white">
+                    <div class="max-w-2xl">
+                        <span class="font-label-caps text-label-caps text-primary-fixed-dim tracking-[0.3em] uppercase mb-6 block">The Elevated Morning Ritual</span>
+                        <h1 class="font-display-lg text-display-lg mb-8">Crafting Quiet Moments of Luxury</h1>
+                        <p class="font-body-lg text-body-lg text-surface-container mb-10 opacity-90 leading-relaxed">A sanctuary for the discerning palate. Experience the confluence of artisanal craft coffee and the timeless elegance of slow living.</p>
+                        <div class="flex gap-6">
+                            <a href="./menu.html" target="_blank" rel="noopener noreferrer">
+                                <button class="bg-surface-container-lowest text-primary font-label-caps text-label-caps px-10 py-4 rounded-full hover:bg-surface-container transition-colors">View Menu</button>
+                            </a>
+                            <a href="./story.html" target="_blank" rel="noopener noreferrer">
+                                <button class="border border-surface-container-lowest/30 text-surface-container-lowest font-label-caps text-label-caps px-10 py-4 rounded-full backdrop-blur-sm hover:bg-white/10 transition-colors">Our Story</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="py-section-gap bg-background">
+                <div class="max-w-[1280px] mx-auto px-10 grid md:grid-cols-2 gap-20 items-center">
+                    <div class="relative">
+                        <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl shadow-primary/10 border border-primary/5">
+                            <img
+                                class="w-full h-full object-cover"
+                                data-alt="Close-up detail of a master barista carefully pouring a latte art heart into a dark ceramic cup. The setting is an artisanal cafe with soft natural lighting and warm wood surfaces. The image captures the steam, the creamy texture of the milk, and the deep coffee color, conveying a sense of craftsmanship and tactile luxury."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlAH_B34vUo8McstF_lLlvKiA2RglpgTKsg_bj0isVJIRbS-WHH__BsARN46szJp9w-Un1Mv2Okj9mNKoUaMA6jT9lcoGWkze9AjWSfMTWyvOFkJaDUJ6yC09n5-6k8252q3Sn__UWZl0QGg1Z0gzVha1EftyXPR8hUdFgAqhpqMGmc2yv0ZAIueWSYf5W1-I5FtGhhG7oNO3TJTJR1GTi2rT-OEv37aKLFWdcceeCdmCd42bjBcOFe2jmNQSsvoCxwJ_udJ4UOe8"
+                            />
+                        </div>
+                        <div class="absolute -bottom-10 -right-10 w-64 aspect-square bg-surface-container-high p-4 rounded-lg shadow-xl hidden lg:block">
+                            <img
+                                class="w-full h-full object-cover rounded"
+                                data-alt="Top-down view of premium roasted coffee beans scattered on a textured cream linen cloth alongside a vintage brass spoon. The lighting is warm and directional, emphasizing the rich oily texture of the beans and the artisanal quality of the ingredients used in the cafe."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuArP3oviIotccrMknmJDxVg8JjhkzBtv8LM0XsjCg0iweKKmtzrVcILpp5u5fmOQx6GgEPuxY7UorPiI9s1Ua3cwUllmgaUGAHHgiu1OsPbxN5Cm3_LxNMAKSxYWTzzPqlsr3n9sb7UnEvODX5gSxKNqQgqhWNC68Jg2qDgXvQ75L6nzpybqc31oVcRHlzsXNVJlRJyii6T_KZejkpQ6SOJs-K0CxroRhSbTxpwQE46REGxL0LCOf8qlNdwqKILcu_Nx6ddMHiOLxE"
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <span class="font-label-caps text-label-caps text-secondary tracking-widest mb-4 block uppercase">The Heritage</span>
+                        <h2 class="font-headline-xl text-headline-xl text-primary mb-8">Our Story: A Passion for the Perfect Pour</h2>
+                        <div class="space-y-6">
+                            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">T-Cafe was born from a singular vision: to elevate the everyday ritual of the morning coffee into an experience of quiet luxury. We believe that true quality lies in the details.</p>
+                            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">From sourcing single-origin beans at their peak to our meticulous roasting process, every step is a testament to our commitment to craftsmanship. Our cafe is more than a destination; it's an invitation to slow down and savor the artisanal.</p>
+                            <div class="pt-6 border-t border-outline-variant/30">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1">workspace_premium</span>
+                                    <p class="font-label-caps text-label-caps text-primary tracking-wider uppercase">Voted Best Boutique Roaster 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-section-gap bg-surface-container-low">
+                <div class="max-w-[1280px] mx-auto px-10">
+                    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                        <div class="max-w-xl">
+                            <span class="font-label-caps text-label-caps text-secondary tracking-widest mb-4 block uppercase">The Patisserie</span>
+                            <h2 class="font-headline-xl text-headline-xl text-primary">Seasonal Pastries &amp; Delicacies</h2>
+                        </div>
+                        <a href="./menu.html" target="_blank" rel="noopener noreferrer">
+                            <button class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-2 hover:opacity-70 transition-opacity">View Full Menu</button>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="group cursor-pointer">
+                            <div class="aspect-square bg-surface-cream overflow-hidden rounded-xl mb-6 relative">
+                                <img
+                                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    data-alt="A pristine white plate holding a golden, flaky artisanal croissant dusted with a hint of powdered sugar. The pastry sits on a light cream marble table in a bright, airy cafe setting. The focus is sharp on the delicate layers of the dough, suggesting a buttery and rich flavor profile aligned with the brand's premium aesthetic."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM_d9hgJEfSajcoKQxNhJC4K_XPiXCqej05qm0h1rtjaCXhnN8uyIYhdSuOZcxsd_YXwzQsJ7XXXHZCpKD8j3hnz97gLCfhSAlK8wQdzcf8pN2FWYZdUuOGIFA18o3TngNGc6YDBJPJouewoAMXEe5aWeT5lmk3D5MzIW5Xkgt5hd4FBWchuehv39KbuoOdd1Ror4ZL-9PmZh1ysXnOREc3QenbsaZP9xeeJQXmkIkAlNXik_A83y9jtMxfedkMQqzAIcFs018ibU"
+                                />
+                                <div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-headline-md text-[24px] text-primary mb-2">Almond Pain au Chocolat</h3>
+                                    <p class="font-body-md text-on-surface-variant">Twice-baked with house-made frangipane.</p>
+                                </div>
+                                <span class="font-label-caps text-label-caps text-secondary">$8</span>
+                            </div>
+                        </div>
+                        <div class="group cursor-pointer">
+                            <div class="aspect-square bg-surface-cream overflow-hidden rounded-xl mb-6 relative">
+                                <img
+                                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    data-alt="A decadent seasonal fruit tart featuring vibrant berries nestled in a rich vanilla bean custard within a shortbread crust. The tart is presented on a minimalist ceramic plate against a warm, sun-lit bistro background. The colors are lush and natural, highlighting the freshness of the ingredients and the artisanal craftsmanship of the cafe's patisserie."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxHvb--zXR6EMXMADkhnxR7_ZpLU55Cs6WSZiEboDGH1A14RFUq5MDpPceHGa5USzXS80Ek6QqGZSY3Cqfu67Gz032vOvCNtd5aTxw7pxg6At83LXZHJtcUE9k1i-H8MjBK_jaUu6UIuBjuXxUXC3NqUurbPqDkvSC8vSSMMi9CzBb01-pJJgWkSQCHs0qEKO3Ch3Vz7HV1l8tk2dKxKKsEM-5rtYVt4CDmox7afvAdbVrq9PeKk_TGhsTJjk13TToUTddNT5hU9M"
+                                />
+                                <div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-headline-md text-[24px] text-primary mb-2">Vanilla Bean Tart</h3>
+                                    <p class="font-body-md text-on-surface-variant">Tahitian vanilla bean custard &amp; seasonal berries.</p>
+                                </div>
+                                <span class="font-label-caps text-label-caps text-secondary">$12</span>
+                            </div>
+                        </div>
+                        <div class="group cursor-pointer">
+                            <div class="aspect-square bg-surface-cream overflow-hidden rounded-xl mb-6 relative">
+                                <img
+                                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    data-alt="A gourmet glazed brioche doughnut with a dark chocolate ganache drizzle and a sprinkle of sea salt. The doughnut is artfully placed on a dark wood tray, with soft bokeh lighting from the cafe's interior in the background. The rich browns and warm highlights create an inviting and luxurious visual experience."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZT-MkS3DSA903aqMWe_7qa4uHOZLt8L_whwPeg-VX2oduqA-J_QXjYGvgUK_ZzdoGzSmGtlUE8XFxm2mBtESwxuuxr3BA1JgYKeSLwjgdvV2tsEeCr8Yr-tdldseMibA_N6O-3ye8pMOawPP4HM-zpcVraHHC8ZNRgaovqQpyqyi91I5F9NLyhSYa_jnj-iCVoP-XUZ1WlqoL0Q9PQlhqafrrkUSRKukNriCyRDxwHKnISGBJqDijhSt4Tt9EWE2ioEoR1aRbBZ8"
+                                />
+                                <div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-headline-md text-[24px] text-primary mb-2">Salted Dark Brioche</h3>
+                                    <p class="font-body-md text-on-surface-variant">70% Valrhona ganache and hand-harvested salt.</p>
+                                </div>
+                                <span class="font-label-caps text-label-caps text-secondary">$9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-section-gap">
+                <div class="max-w-[1280px] mx-auto px-10">
+                    <div class="bg-primary p-12 md:p-24 rounded-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12">
+                        <div class="absolute inset-0 opacity-10">
+                            <img
+                                class="w-full h-full object-cover grayscale"
+                                data-alt="A subtle, high-contrast black and white texture of steam rising from a coffee cup, used as a decorative background element to add depth and atmosphere to the Visit Us section."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8zzhghkb5GPvP5IQolxXK9g0OiIFKnK0IJ52Rf4Hpo8Bd6lk51IUW47Vj0L0l1QKAu61umidkJ-Gt57ODREZ7h8PdpXadRoez-3cH1ROpg7bL2ACr9GxqYzG7AaEiTvVVom3QnvakvRcWfOwdtM7piEy30DS_3Iw7Lh3V9BmWnls6bsdCQF7_VnY7zXohj0IQayGwJ6TNH3zIp__DFaTVuEFQRrZ2PxfVWD_xXh1sn_5ExNtxsDMEH0jpyaobwBR6Mbp_sWV3_uQ"
+                            />
+                        </div>
+                        <div class="relative z-10 max-w-lg">
+                            <span class="font-label-caps text-label-caps text-primary-fixed-dim tracking-widest mb-6 block uppercase">Location</span>
+                            <h2 class="font-headline-xl text-headline-xl text-white mb-6">Visit Our Sanctuary</h2>
+                            <p class="font-body-lg text-body-lg text-on-primary-container mb-8">Experience the art of the pour in person. Located in the heart of the historic district, we offer a serene escape from the city's pace.</p>
+                            <div class="space-y-4 text-white">
+                                <div class="flex items-center gap-4">
+                                    <span class="material-symbols-outlined text-secondary-fixed">location_on</span>
+                                    <p class="font-body-md">124 Artisans Lane, Heritage District</p>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="material-symbols-outlined text-secondary-fixed">schedule</span>
+                                    <p class="font-body-md">Mon–Fri: 7am - 6pm | Sat–Sun: 8am - 7pm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative z-10 w-full md:w-auto">
+                            <div class="bg-surface-container-lowest p-8 rounded-xl shadow-2xl flex flex-col items-center">
+                                <div class="w-20 h-20 bg-primary-container rounded-full flex items-center justify-center mb-6">
+                                    <span class="material-symbols-outlined text-secondary-fixed text-4xl" style="font-variation-settings: &quot;FILL&quot; 1">calendar_month</span>
+                                </div>
+                                <h4 class="font-headline-md text-[24px] text-primary mb-2">Book a Table</h4>
+                                <p class="font-body-md text-on-surface-variant text-center mb-8">Secure your quiet corner for your morning ritual.</p>
+                                <a href="./reservations.html" target="_blank" rel="noopener noreferrer">
+                                    <button class="w-full bg-primary text-on-primary font-label-caps text-label-caps py-4 px-12 rounded-full hover:opacity-90 transition-all">Make Reservation</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <div id="footer-container"></div>
+        <!-- Scroll buttons -->
+        <div id="scroll-buttons-container"></div>
+        <script src="/assets/js/load-components.js"></script>
+    </body>
+</html>
